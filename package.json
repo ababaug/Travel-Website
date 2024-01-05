@@ -1,0 +1,14 @@
+{
+  "name": "travel-website",
+  "version": "1.0.0",
+  "description": "Landing page for travel website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Augustine Abah",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
