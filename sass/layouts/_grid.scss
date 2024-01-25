@@ -44,17 +44,6 @@
     }
   }
 
-  .col-1-of-4 {
-    width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
-    background-color: red;
-    float: left;
-    margin-bottom: $gutter-vertical;
-    height: $grid-height;
-    &:not(:last-child) {
-      margin-right: $gutter-horizontal;
-    }
-  }
-
   .col-2-of-4 {
     width: calc(
       2 * ((100% - 3 * #{$gutter-horizontal}) / 4) + #{$gutter-horizontal}
@@ -75,6 +64,23 @@
       )
     );
     background-color: red;
+    float: left;
+    margin-bottom: $gutter-vertical;
+    height: $grid-height;
+    &:not(:last-child) {
+      margin-right: $gutter-horizontal;
+    }
+  }
+}
+
+.section-feature {
+  max-width: $grid-width;
+  margin: 0 auto;
+  &__row {
+    padding: 0 15rem 15rem 15rem;
+  }
+  &__col {
+    width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
     float: left;
     margin-bottom: $gutter-vertical;
     height: $grid-height;
